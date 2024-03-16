@@ -1,0 +1,49 @@
+@import '~bootstrap/scss/bootstrap';
+
+
+
+@mixin make-container($padding-x: $container-padding-x) {
+    width: 100%;
+    padding-left: container-padding-x;
+    padding-right: container-padding-x;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container {
+    @include make-container(600px);
+}
+
+.list::before {
+    content: "✔";
+    display: block;
+    left: 0;
+    top: 0px;
+    color: #40312C;
+    font-size: 20px;
+    display: inline;
+    padding: 10px
+}
+
+.title {
+    margin: 30px 0px 50px;
+}
+
+.middleTitle {
+    margin: 25px 0px;
+}
+
+.txt {
+    margin: 20px 0px;
+}
+
+body {
+    color:#40312C;
+    font-family: 'Playfair Display',serif;   
+}
+
+.sectionInput {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

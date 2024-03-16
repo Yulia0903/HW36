@@ -1,0 +1,60 @@
+.filterTitile {
+    font-weight:500;
+    border-bottom: 1px solid #cdc2bb;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+h5 {
+    padding: 10px 0px;
+    border-bottom: 1px solid #cdc2bb;
+    position: relative;
+    text-transform: unset;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.up {
+    width: 13px;
+    height: 13px;
+    display: block;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: -9999px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin: 0;
+    opacity: 1 !important;
+    display: block;
+}
+
+.down {
+    transform: translateY(-50%) !important;
+}
+
+.arrow {
+    transition: 0.3s all;
+}
+
+.category {
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.category.visible {
+    max-height: 100px;
+    opacity: 1;
+}
+
+@media (max-width: 1200px) {
+    .category {
+        margin: 10px;
+    }    
+}

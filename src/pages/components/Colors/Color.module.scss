@@ -1,0 +1,49 @@
+
+
+.buttonColor:focus {
+    border: 2px solid #333;
+    outline: none;
+    box-shadow: 0 0 5px #333;
+    width:35px;
+}
+
+.colorSquareBlack:focus {
+    border: 4px solid #fff;
+    outline: none;
+    box-shadow: 0 0 5px #fff;
+    width: 35px;
+
+}
+
+.colorSquareBlack {
+    height: 35px;
+    width: 35px;
+    margin: 0 5px 5px 0;
+    font-size: 13px;
+    background-color: #000;
+    transition: all 0.3s ease;
+    border-radius:10px;
+}
+
+.blockColor {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    
+}
+
+.flexCenterColor {
+    width: 35px;
+}
+
+.colorSquareWhite {
+    height: 35px;
+    min-width: 35px;
+    padding: 5px 12px;
+    margin: 0 5px 5px 0;
+    font-size: 13px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    border: 1px solid #333;
+    border-radius: 10px;
+}

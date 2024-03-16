@@ -1,0 +1,196 @@
+@import '~bootstrap/scss/bootstrap';
+
+
+
+@mixin make-container($padding-x: $container-padding-x) {
+    width: 100%;
+    padding-left: container-padding-x;
+    padding-right: container-padding-x;
+    margin-right: auto;
+    margin-left: auto;
+    margin: auto;
+}
+
+.container {
+    @include make-container(300px);
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+
+.flexBorder {
+    display: flex;
+    gap: 130px;
+    border-right: 1px solid #6d5b4f;
+    padding: 60px;
+}
+
+.listContacts {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 17px;
+    padding: 15px 0px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.icon {
+    width: 30px;
+    height: 20px;
+}
+
+.title {
+    padding: 20px 0px;
+    font-weight: 700;
+}
+
+.flex {
+    display: flex;
+    gap: 10px;
+}
+
+.anchor {
+    color: #40312C;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 6px;
+    padding-left: 6px;
+    text-decoration: none;
+}
+
+.anchorBuy {
+    color: #40312C;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 6px;
+    padding-left: 6px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: 0.5s all ease;
+}
+
+
+.img {
+    max-width: 200px;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.nav {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.icons {
+    color:black;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.navFlex {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.navClothes {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.navBarClothes {
+    color: #40312C;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.line {
+    height: 1px;
+    background: #6d5b4f;
+}
+
+.flexWindow {
+    display: flex;
+    flex-direction: column;
+    background-color:#fff;
+}
+
+.hamburger {
+    display: none;
+}
+
+.screenMopile {
+    display: flex;
+    gap: 10px;
+}
+
+.colorPopUp {
+    font-size: 18px;
+    color: #40312C;
+}
+
+.popup-content {
+    padding: 0;
+    border: 0;
+}
+
+.anchorBuy::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+    transition: 1s ease all;
+}
+
+.anchorBuy:hover::after {
+    transform: rotate(180deg);
+}
+
+
+@media (max-width: 1024px) {
+    .hamburger {
+        display: block;
+    }
+    .screenMopile {
+        display: none;
+    }
+
+}
+
+@media (max-width:768px) {
+    .nav {
+        gap: 25px;
+    }
+    .icons {
+        font-size: 16px;
+    }
+    .img {
+        max-width: 150px;
+        width: 100%;
+    }
+}

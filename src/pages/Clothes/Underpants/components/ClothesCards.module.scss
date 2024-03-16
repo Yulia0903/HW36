@@ -1,0 +1,220 @@
+
+
+@media(max-width:1200px) {
+    .headerMainSection {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.Toastify__toast-container {
+    position: fixed;
+    z-index: 9999;
+    transform: translate3d(0, 0, 9999px);
+    top: 1em;
+    right: 1em;
+}
+
+.listOfUnderClothes {
+    display:flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    z-index: -1;
+    justify-content: center;
+}
+
+.img {
+    max-width: 280px;
+    width: 100%;
+    min-height: 300px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+}
+
+
+.img:hover {
+    transform: scale(1.02); 
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 50px 0px 25px 0px;
+    color:#40312C;
+}
+
+.price {
+    color: #40312C;
+}
+
+.discount {
+    color: #40312C;
+}
+
+.description {
+    font-size: 13px;
+    text-transform: uppercase;
+    color:#40312C;
+}
+
+.buttonColor {
+    height:35px;
+    min-width:35px;
+    padding: 5px 12px;
+    border: 1px solid #40312C;
+    border-radius: 5px;
+}
+
+.flexCenterColor {
+    display:flex;
+}
+
+.desiredIcon {
+    position:absolute;
+    left:0
+}
+
+.color {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+.favoriteColorClick {
+    color: #000 !important;
+}
+
+.buttonColor:focus {
+    border: 2px solid #333 !important;
+}
+.colorSquareBlack:focus {
+    border: 4px solid #fff !important;
+}
+
+.colorSquareBlack {
+    height: 35px !important;
+    min-width: 35px !important;
+    padding: 5px 12px;
+    margin-top: 0;
+    margin-right: 5px !important;
+    margin-bottom: 5px;
+    font-size: 13px;
+    background-color: #000;
+}
+
+.blockColor {
+    background-color: #000;
+    height: fit-content;
+    max-width: auto;
+}
+
+.listOfItem {
+    text-align: center;
+}
+
+.listOfItem:hover {
+    transition: 0.3s all ease;
+}
+
+.hoverItem {
+    background-color: #F6F2E7;
+    background-position: center;
+    position: relative;
+    transition: 0.4 all ease;
+}
+
+.hoverItem:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 0 #333;
+    z-index: 10000;
+}
+
+.descriptionItem {
+    position: absolute;
+    background-color:#F6F2E7;
+    max-width: auto;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.sizes {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+.itemSize {
+    border-radius: 6px !important;
+    border: 1px solid #6D5B4F !important;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #40312C;
+    justify-content: center;
+    height: 35px !important;
+    min-width: 35px !important;
+    padding: 5px 12px;
+    margin-top: 0;
+    margin-right: 5px !important;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+.itemSize:hover {
+    background-color: #40312C;
+    color: #fff;
+    font-weight: 600;
+}
+
+.itemSize:focus {
+    background-color: #40312C;
+    color: #fff;
+    font-weight: 600;
+}
+
+.btnBuyItem {
+    cursor: pointer !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 120% !important;
+    letter-spacing: 0.5px !important;
+    padding: 13px 23px !important;
+    border-radius: 6px !important;
+    color: #FFFFFF ;
+    display: inline-block !important;
+    appearance: none !important;
+    background-color: #6D5B4F;
+    border: 1px solid #6D5B4F !important;
+    text-transform: uppercase !important;
+    font-family: inherit !important;
+    transition: 0.25s all !important;
+    transition: 1s ease all !important;
+    width: 100%;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+.btnBuyItem:hover {
+    background-color: #fff;
+    color: #6D5B4F;
+}
+
+.descriptionItem {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.lineThrough {
+    text-decoration: line-through;
+    color: #40312C;
+}
+
+
+@media (max-width:1200px) {
+    .listOfUnderClothes {
+        justify-content:center;
+    }
+}

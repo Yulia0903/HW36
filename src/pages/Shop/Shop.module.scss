@@ -1,0 +1,212 @@
+
+
+.filter {
+    border: 2px solid #656565;
+    padding: 20px;
+    border-radius: 8px;
+    width: 360px;
+    min-height: 400px;
+    height: fit-content;
+}
+
+.flex {
+    display:flex;
+    gap:15px;
+    margin: 20px 0px;
+}
+
+@media (max-width: 1250px) {
+    .filter {
+        display: none;
+    }
+}
+
+
+
+@media(max-width:1200px) {
+    .headerMainSection {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.listOfUnderClothes {
+    display:flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    z-index: -1;
+}
+
+.img {
+    max-width: 280px;
+    width: 100%;
+    min-height: 300px;
+}
+
+.title {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 50px 0px 25px 0px;
+}
+
+.description {
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.buttonColor {
+    height:35px;
+    min-width:35px;
+    padding: 5px 12px;
+    border: 1px solid #40312C;
+    border-radius: 5px;
+}
+
+.flexCenterColor {
+    display:flex;
+}
+
+.color {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+.favoriteColorClick {
+    color: #000 !important;
+}
+
+.buttonColor:focus {
+    border: 2px solid #333 !important;
+}
+.colorSquareBlack:focus {
+    border: 4px solid #fff !important;
+}
+
+.colorSquareBlack {
+    height: 35px !important;
+    min-width: 35px !important;
+    padding: 5px 12px;
+    margin-top: 0;
+    margin-right: 5px !important;
+    margin-bottom: 5px;
+    font-size: 13px;
+    background-color: #000;
+}
+
+.blockColor {
+    background-color: #000;
+    height: fit-content;
+    max-width: auto;
+}
+
+.listOfItem {
+    text-align: center;
+}
+
+.listOfItem:hover {
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #F6F2E7;
+    transition: 0.3s all ease;
+}
+
+.hoverItem {
+    background-color: #F6F2E7;
+    background-position: center;
+    position: relative;
+}
+
+.descriptionItem {
+    position: absolute;
+    z-index: 10;
+    background-color:#F6F2E7;
+    max-width: auto;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.sizes {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+.itemSize {
+    border-radius: 6px !important;
+    border: 1px solid #6D5B4F !important;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #40312C;
+    justify-content: center;
+    height: 35px !important;
+    min-width: 35px !important;
+    padding: 5px 12px;
+    margin-top: 0;
+    margin-right: 5px !important;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+.itemSize:hover {
+    background-color: #40312C;
+    color: #fff;
+    font-weight: 600;
+}
+
+.itemSize:focus {
+    background-color: #40312C;
+    color: #fff;
+    font-weight: 600;
+}
+
+.btnBuyItem {
+    cursor: pointer !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 120% !important;
+    letter-spacing: 0.5px !important;
+    padding: 13px 23px !important;
+    border-radius: 6px !important;
+    color: #FFFFFF ;
+    display: inline-block !important;
+    appearance: none !important;
+    background-color: #6D5B4F;
+    border: 1px solid #6D5B4F !important;
+    text-transform: uppercase !important;
+    font-family: inherit !important;
+    transition: 0.25s all !important;
+    transition: 1s ease all !important;
+    width: 100%;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+.btnBuyItem:hover {
+    background-color: #fff;
+    color: #6D5B4F;
+}
+
+.descriptionItem {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.lineThrough {
+    text-decoration: line-through;
+}
+
+
+@media (max-width:1200px) {
+    .listOfUnderClothes {
+        justify-content:center;
+    }
+}
+
+.flexCards {
+    display: flex;
+    flex-direction: column;
+}

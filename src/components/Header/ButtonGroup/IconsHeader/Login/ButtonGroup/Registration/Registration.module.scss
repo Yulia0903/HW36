@@ -1,0 +1,125 @@
+.modal {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.3s all ease;
+    pointer-events: none;
+    z-index: 10000;
+}
+
+.activeWindow {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modalContent {
+    padding: 20px 10px;
+    border-radius: 12px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 370px;
+    transition: 0.5s ease;
+}
+
+.modalContent:active {
+    transform: scale(1);
+}
+
+
+.none {
+    transform: scale(0);
+}
+
+.txt {
+    font-size: 27px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cross {
+    font-size: 27px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+    color: #6D5B4F;
+    border: 1px solid #6D5B4F;
+    padding: 23px;
+    border-radius: 23px;
+    max-width: 100vw;
+    background-color: #fff;
+}
+
+.button:hover {
+    background-color: #6D5B4F;
+    color: #fff;
+    transition: 1s ease;
+}
+
+.footerBin {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.label {
+    margin-bottom: 5px;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.autorisation {
+    padding: 5px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.input {
+    padding: 5px;
+    width: 100% !important;
+    outline: none !important;
+    padding: 10px 15px !important;
+    line-height: 1 !important;
+    font-size: 100% !important;
+    resize: vertical !important;
+    appearance: none !important;
+    border-radius: 6px !important;
+    color: #40312C !important;
+    font-family: inherit !important;
+    -moz-appearance: none !important;
+    -webkit-appearance: none !important;
+    box-sizing: border-box !important;
+    background: #fefefe !important;
+    transition: border-color 0.3s ease !important;
+    border: 1px solid #cdc2bb !important;
+    box-shadow: none !important;
+}
+
+.labelCheck {
+    color: #000;
+    opacity: .5;
+    font-size: 15px;
+    transition: .5s ease;
+    line-height: 100%;
+    margin-left: 5px;
+}

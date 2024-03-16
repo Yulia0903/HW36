@@ -1,0 +1,89 @@
+.flex {
+    display:flex;
+    gap:20px;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.blockInfoItem {
+    margin: 25px 0px;
+}
+
+.title {
+    color: #40312C;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Playfair Display',serif;
+    margin: 0px 0px 30px 0px
+}
+
+.price {
+    font-weight: 700;
+    font-family: 'Playfair Display',serif;
+    font-size: 30px;
+}
+
+
+.button {
+    width: 250px;
+    padding: 25px;
+}
+
+.info {
+    margin: 25px 0px;
+}
+
+.listCharacteristics {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.flexProduct {
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.drop {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    border-bottom: 1px solid #40312C;
+    cursor: pointer;
+    transition: 0.4s all ease;
+}
+
+.dropContent {
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+    max-height: 0;
+}
+
+.active {
+    max-height: 100px;
+}
+
+.similar {
+    display:flex;
+    justify-content:center;
+}
+
+
+@media (max-width: 768px) {
+    .img {
+        width: 300px;
+        min-height: 150px;
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width:1024px) {
+    .flex {
+        flex-wrap: wrap;
+    }
+    .img {
+        margin: 0 auto;
+    }
+}

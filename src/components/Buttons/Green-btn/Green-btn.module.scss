@@ -1,0 +1,18 @@
+@import '../../../styles/variables.scss';
+
+.green-button {
+  background-color: $green;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  font-family: $main-font;
+  font-size: 20px;
+  transition: 0.2s ease;
+}
+
+.green-button:hover {
+  transform: scale(1.02);
+}

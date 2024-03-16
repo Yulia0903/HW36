@@ -1,0 +1,80 @@
+@import '../../styles/variables.scss';
+
+.large-card {
+  display: flex;
+  font-family: $main-font;
+}
+
+.image-container {
+  margin-right: 20px;
+}
+
+.product-image {
+  width: 500px;
+  height: auto;
+}
+
+.details-container {
+  flex: 1;
+}
+
+.product-name {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.manufacturer {
+  margin-bottom: 50px;
+  margin-left: 0;
+}
+.product-price {
+  margin-bottom: 50px;
+  margin-left: 0;
+  font-size: 24px;
+}
+
+.color-container,
+.size-container {
+  margin-bottom: 10px;
+}
+
+.color-options {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.item-option {
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+  border: 1px solid #ccc;
+  border-radius: 20%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-option:hover {
+  background-color: $light-brown;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+}
+
+
+.favorite-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.favourite-icon-card {
+  height: 40px;
+  width: 40px;
+}
+

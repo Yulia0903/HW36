@@ -1,0 +1,136 @@
+.disabled {
+    opacity: 0.25;
+    font-size: 25px;
+    padding: 0px 15px;
+}
+
+.flex {
+    display: flex;
+    gap: 20px;
+    flex-wrap:wrap;
+
+}
+
+.img {
+    max-width: 80px;
+    height: 100px;
+    width: 100%;
+}
+
+.listItems {
+    background-color: #fff;
+}
+
+.title {
+    margin: 25px 0px 0px 0px;
+}
+
+.list {
+    border-bottom: 1px solid grey;
+    padding: 15px;
+    padding: 10px 0px;
+}
+
+.deliveryInfo {
+    padding: 15px;
+    background-color: #fff;
+    min-height:200px;
+    overflow-y: auto;
+}
+
+.formik {
+    display:flex;
+    gap:15px;
+    width: 400px;
+}
+
+.fieldFormik {
+    width: 100% !important;
+    outline: none !important;
+    padding: 10px 15px !important;
+    line-height: 1 !important;
+    font-size: 100% !important;
+    resize: vertical !important;
+    appearance: none !important;
+    border-radius: 6px !important;
+    color: #40312C !important;
+    font-family: inherit !important;
+    -moz-appearance: none !important;
+    -webkit-appearance: none !important;
+    box-sizing: border-box !important;
+    background: #fefefe !important;
+    transition: border-color 0.3s ease !important;
+    border: 1px solid #cdc2bb !important;
+    box-shadow: none !important;
+}
+
+
+.flexFormik {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+}
+
+.comment {
+    font-size: 18px;   
+    cursor: pointer;
+    color: #140205;
+}
+
+.animationComment {
+    transition: 0.4s all ease-in-out;
+}
+
+.button {
+    border: 0px #fff;
+    font-family: 700;
+    font-size: 20px;
+    width: 15px;
+
+}
+
+.counterItems {
+    border: 1px solid grey;
+    max-width: 100px;
+    width: 100%;
+    padding: 0;
+    margin: auto;
+    display: flex;
+    width: max-content;
+    border: 1px solid #eaeaea;
+    align-items: center;
+    margin: 5px 0px;
+}
+
+.list {
+    padding: 0px 15px;
+    font-size: 25px;
+    border: 0px;
+}
+
+.decrement {
+    padding: 0px 15px;
+    font-size: 25px;
+}
+
+.listOfAtributes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.flexSum {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 0px;
+    font-size: 20px;
+}
+
+@media (max-width:1024px) {
+    .flexFormik {
+        justify-content: center;
+        gap: 30px;
+    }
+}

@@ -1,0 +1,35 @@
+.navClothes {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.navBarClothes {
+    color: #40312C;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.line {
+    height: 1px;
+    background: #6d5b4f;
+}
+
+.screenMopile {
+    display: flex;
+    gap: 10px;
+}
+
+@media (max-width:1024px) {
+    .screenMopile {
+        display: none;
+    }
+}

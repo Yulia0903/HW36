@@ -1,0 +1,44 @@
+.price {
+    display: flex; 
+    gap: 20px;
+    align-items: center;
+}
+
+.inputPrice {
+    width: 30%;
+    padding: 0;
+    height: 32px;
+    font-size: 100%;
+    line-height: 32px;
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+    color: #666666;
+    border-radius: 3px;
+}
+
+.button {
+    border: 1px solid #6D5B4F !important;
+    background-color: #6D5B4F;
+    transition: 0.5s ease-out;
+    appearance: none !important;
+    color: #FFFFFF;
+    border-radius: 6px;
+    width: 25%;
+    padding: 5px 10px;
+}
+
+.button:hover {
+    background-color: #FFFFFF;
+    color: #6D5B4F;
+}
+
+.scrollabletextbox {
+    margin: 100px 0px;
+}
+
+.labelMaker {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}

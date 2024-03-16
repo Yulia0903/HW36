@@ -1,0 +1,26 @@
+.button {
+    cursor: pointer !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 120% !important;
+    letter-spacing: 0.5px !important;
+    padding: 13px 23px !important;
+    border-radius: 6px !important;
+    color: #FFFFFF ;
+    display: inline-block !important;
+    appearance: none !important;
+    -moz-appearance: none !important;
+    -webkit-appearance: none !important;
+    background-color: #6D5B4F ;
+    border: 1px solid #6D5B4F !important;
+    text-transform: uppercase !important;
+    font-family: inherit !important;
+    transition: 0.25s all !important;
+    transition: 1s ease all !important;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #6D5B4F;
+}
+

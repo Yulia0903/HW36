@@ -1,0 +1,136 @@
+.hamburger {
+    display: none;
+}
+
+// flexWindow, anchorWindow, anchor, flexRelative
+
+.flexWindow {
+    display: flex;
+    flex-direction: column;
+    background-color:#eddfb9;
+    color: #40312C;
+    
+}
+
+.anchor {
+    color: #40312C;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 6px;
+    padding-left: 6px;
+    text-decoration: none;
+}
+
+.flexRelative {
+
+    background-color: #fff;
+    z-index: 1000;
+
+}
+
+.modalWindow {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    transition: 0.3s all ease;
+    z-index: 1000;
+}
+
+.windowPopUp {
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    min-height: auto;
+    border-radius: 26px;
+    flex-direction: column;
+    overflow-y:auto;
+    height:100vh;  
+    z-index: 10000; 
+}
+
+.navBarClothes {
+    color: #40312C;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.navClothes {
+    display: flex;
+    gap: 40px;
+}
+
+.cross {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 56px;
+    
+}
+
+.flexCross {
+    display: flex;
+    justify-content: space-between;
+}
+
+.PopUpModalWindow {
+    transition: 0.4s all;
+}
+
+
+@media (max-width: 1024px) {
+    .hamburger {
+        display: block;
+    }
+
+    .anchor {
+        font-size: 24px;
+        padding: 15px;
+    } 
+    
+    .navClothes {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        
+    }
+    
+    .navBarClothes {
+        font-size: 16px;
+        padding: 15px;
+
+    }
+
+    .title {
+        font-size: 30px;
+    }
+    h2 {
+        background-color: #eddfb9;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    li {
+        padding: 15px;
+    }
+    .windowPopUpCenter {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:768px) {
+    li {
+        font-size: 18px;
+        padding: 5px;
+    }
+    .anchor {
+        font-size: 18px;
+        padding: 5px;
+    }
+}

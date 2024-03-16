@@ -1,0 +1,87 @@
+@import '~bootstrap/scss/bootstrap';
+
+.gridlock {
+    width: 300px;
+}
+
+@mixin make-container($padding-x: $container-padding-x) {
+    width: 100%;
+    padding-left: $padding-x;
+    padding-right: $padding-x;
+    margin-right: auto;
+    margin-left: auto;
+    margin:auto;
+}
+
+.container {
+    @include make-container(100px);
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.footer {
+    border-top: 1px solid #6d5b4f;
+    margin-top: 40px;
+    display: flex;
+}
+
+.line {
+    height: 1px;
+    background: #6d5b4f;
+}
+
+.flexBorder {
+    display: flex;
+    gap: 130px;
+    border-right: 1px solid #6d5b4f;
+    padding: 60px;
+}
+
+.listContacts {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 17px;
+    padding: 15px 0px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.icon {
+    width: 30px;
+    height: 20px;
+}
+
+.title {
+    padding: 20px 0px;
+    font-weight: 700;
+}
+
+.noneNav {
+    display: flex;
+    gap: 100px;
+}
+
+@media (max-width:1024px) {
+    .noneNav {
+    display: none;
+    }
+}
+
+@media (max-width:768px) {
+    .line {
+        display: hidden;
+    }
+    .container {
+        text-align: center;
+    }
+    .flexBorder {
+        display: none;
+    }
+    .footer {
+        text-align: center;
+    }
+}

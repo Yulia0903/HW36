@@ -1,0 +1,46 @@
+@import '../../styles/variables.scss';
+
+// картка для категорій
+
+h2 {
+    font-family: $title-font;
+    font-size: 36px;
+}
+.categories-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.category-item {
+    width: calc(33.33% - 10px);
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: $main-font;
+    font-size: 16px;
+}
+
+.category-item h3 {
+    margin-top: 10px;
+    align-self: center;
+}
+
+.category-item img {
+    width: 300px;
+    transition: transform 0.4s ease;
+}
+
+.category-item:hover img {
+    transform: scale(1.05);
+}

@@ -1,0 +1,25 @@
+
+.navClothes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.navBarClothes {
+    color: #333;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.container {
+    max-width: 300px;
+    width: 100%;
+}
+
+
+@media (max-width:1200px) {
+    .navBarClothes {
+        padding:10px;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,84 @@
+@import '~bootstrap/scss/bootstrap';
+
+$muted-color: #6c757d;
+$primary-color: #007bff;
+$danger-color: #dc3545;
+
+@mixin make-container($padding-x: $container-padding-x) {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.title {
+    margin: 30px 0;
+    text-align: center;
+
+    h1 {
+        font-size: 2.5rem;
+        color: $primary-color;
+    }
+
+    p {
+        font-size: 1.2rem;
+        color: $muted-color;
+    }
+}
+
+.itemList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+.list {
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    img {
+        max-width: 100%;
+        height: auto;
+        border-bottom: 1px solid #ddd;
+    }
+
+    div {
+        padding: 20px;
+
+        h2 {
+            font-size: 1.5rem;
+            color: $primary-color;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: $muted-color;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 1.2rem;
+            color: $danger-color;
+            font-weight: bold;
+        }
+
+        .removeItem {
+            cursor: pointer;
+            color: $danger-color;
+            font-size: 1.2rem;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+@import '../../styles/variables.scss';
+
+// список категорій
+
+.category-list-container {
+    position: relative;
+}
+
+.category-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid $dark-green;
+    border-bottom: 1px solid $dark-green;
+    font-family: $main-font;
+}
+
+.category-list li {
+    padding: 10px;
+}
+
+.category-list-top-bar,
+.category-list-bottom-bar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: $dark-green;
+}
+
+.category-list-top-bar {
+    top: 0;
+}
+
+.category-list-bottom-bar {
+    bottom: 0;
+}
